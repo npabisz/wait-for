@@ -22,6 +22,18 @@ Simple function to allow using libs which are loaded at last in footer.
 
                SomeClassLoadedInFooter.myWidgetJustLoaded();
             });
+			
+            waitFor(['jQuery', 'SomeClassLoadedInFooter'], function () {
+               //Both libraries are loaded
+			   
+			   jQuery.get(SomeClassLoadedInFooter.someUrl());
+            });
+			
+			waitFor('jQuery.someExtraPlugin', function () {
+               //jQuery's someExtraPlugin is loaded
+			   
+			   jQuery('body').someExtraPlugin();
+			});
          </script>
       </div>
 
