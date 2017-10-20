@@ -37,6 +37,9 @@ Simple function to allow using libs which are loaded at last in footer.
          </script>
       </div>
 
+      <!-- Load jQuery -->
+      <script src="/jQuery.js"></script>
+	  
       <!-- Loading our library with SomeClassLoadedInFooter prototype -->
       <script src="/some-class-loaded-in-footer.js"></script>
    </body>
