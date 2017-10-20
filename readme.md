@@ -1,4 +1,4 @@
-#Wait for it!
+# Wait for it!
 
 Simple function to allow using libs which are loaded at last in footer.
 
