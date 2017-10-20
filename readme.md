@@ -26,14 +26,14 @@ Simple function to allow using libs which are loaded at last in footer.
             waitFor(['jQuery', 'SomeClassLoadedInFooter'], function () {
                //Both libraries are loaded
 			   
-			   jQuery.get(SomeClassLoadedInFooter.someUrl());
+               jQuery.get(SomeClassLoadedInFooter.someUrl());
             });
 			
-			waitFor('jQuery.someExtraPlugin', function () {
+            waitFor('jQuery.someExtraPlugin', function () {
                //jQuery's someExtraPlugin is loaded
 			   
-			   jQuery('body').someExtraPlugin();
-			});
+               jQuery('body').someExtraPlugin();
+            });
          </script>
       </div>
 
